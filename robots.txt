@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://zhao73.github.io/shiftru-legal/sitemap.xml
 Sitemap: https://zhao73.github.io/centermint/sitemap.xml
+Sitemap: https://zhao73.github.io/pashareshi/sitemap.xml
