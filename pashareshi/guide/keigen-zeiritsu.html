@@ -40,7 +40,7 @@
 <main class="wrap narrow article">
   <p class="crumbs" style="padding-top:0"><a href="../">ホーム</a> ／ ガイド ／ 軽減税率 8% と 10% の見分け方</p>
   <h1>軽減税率 8% と 10% をレシートで見分ける方法</h1>
-  <p class="byline">公開: 2026年9月16日 ・ 更新: 2026年9月16日 ・ パシャレシ編集部 ／ 制度の詳細は国税庁の公表情報をご確認ください。</p>
+  <p class="byline">公開: 2026年9月16日 ・ 更新: 2026年9月22日 ・ パシャレシ開発者 JIAPENG Zhao ／ 制度の詳細は国税庁の公表情報をご確認ください。</p>
 
   <div class="tldr">
     <h2>この記事の要点</h2>
@@ -123,7 +123,7 @@
   <p>もう一つは、経費を扱う人にとっての実務上の必要性です。仕入税額控除の計算では税率ごとの区分が前提になるため、後からまとめて仕分けようとすると手間がかかります。記録した時点で分かれていれば、その手間が消えます。</p>
 
   <h2>パシャレシでの扱い</h2>
-  <p>パシャレシは 1.1 から、レシートの品目行と 8%／10% の軽減税率の内訳を自動で読み取ります。あわせて、インボイス登録番号（T から始まる 13 桁）も抽出して記録に残します。Apple Intelligence 対応機種では端末内の AI が処理し、非対応機種では従来の OCR で読み取ります。いずれの場合も画像は端末の外に出ません。</p>
+  <p>パシャレシは 1.1 から、レシートの品目行と 8%／10% の軽減税率の内訳を自動で読み取ります。あわせて、インボイス登録番号（T から始まる 13 桁）も抽出して記録に残します。iOS 27以降でApple Intelligenceが利用できる端末では、端末内AIも利用します。それ以外もOCRで読み取れます。読み取り処理は端末内で行い、クラウドでの再認識は提供していません。 保存は既定で端末内です。1.2の任意フォルダ同期や書き出しでは選んだ保存先にも保存します。</p>
   <p>読み取りが外れた場合は、詳細画面から品目や税率区分を手で修正できます。レシート側の記号が掠れていたり、凡例の印字が薄かったりすると誤読が起きやすいので、保存前にひと目だけ確認しておくと確実です。</p>
   <div class="callout">
     <strong>ご注意：</strong>本記事は制度の一般的な整理であり、個別の取引における税率の判定を保証するものではありません。判断に迷う場合は、国税庁が公表する消費税の軽減税率制度に関する資料、または税理士等の専門家にご確認ください。パシャレシは税務相談・税務アドバイスを行うものではありません。
@@ -146,7 +146,7 @@
     <div class="cols">
       <div>
         <h4>パシャレシ</h4>
-        <p style="margin:0 0 16px">撮るだけ、家計簿。<br>レシートを撮影するだけで記録が終わる iPhone 向け家計簿アプリです。</p>
+        <p style="margin:0 0 16px">撮るだけ、家計簿。<br>レシートを読み取り、内容を確認して記録する iPhone 向け家計簿アプリです。</p>
         <a class="badge-as" href="https://apps.apple.com/jp/app/id6788028598">
           <svg viewBox="0 0 24 28" aria-hidden="true"><path d="M17.5 14.8c0-2.8 2.3-4.2 2.4-4.2-1.3-1.9-3.3-2.2-4-2.2-1.7-.2-3.3 1-4.2 1-.9 0-2.2-1-3.6-1-1.9 0-3.6 1.1-4.5 2.8-1.9 3.3-.5 8.3 1.4 11 .9 1.3 2 2.8 3.4 2.7 1.4-.1 1.9-.9 3.5-.9 1.6 0 2.1.9 3.5.8 1.5 0 2.4-1.3 3.3-2.7 1-1.5 1.5-3 1.5-3.1-.1 0-2.7-1.1-2.7-4.2zM14.9 6.6c.8-.9 1.3-2.2 1.1-3.5-1.1 0-2.5.8-3.3 1.7-.7.8-1.3 2.1-1.2 3.4 1.2.1 2.5-.6 3.4-1.6z"/></svg>
           <span><b>App Store</b><span>でダウンロード</span></span>
@@ -183,18 +183,51 @@
   "description": "レシートの「※」印と欄外の凡例、下部の税率別合計から軽減税率8%と標準税率10%を見分ける手順。イートインとテイクアウト、みりん、栄養ドリンク、一体資産など迷いやすいケースも一覧で整理しました。",
   "inLanguage": "ja",
   "datePublished": "2026-09-16",
-  "dateModified": "2026-09-16",
-  "author": {"@type": "Organization", "name": "パシャレシ編集部"},
-  "publisher": {"@type": "Organization", "name": "パシャレシ", "url": "https://zhao73.github.io/pashareshi/"},
+  "dateModified": "2026-09-22",
+  "author": {
+    "@type": "Person",
+    "name": "JIAPENG Zhao",
+    "url": "https://zhao73.github.io/pashareshi/support.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "パシャレシ",
+    "url": "https://zhao73.github.io/pashareshi/"
+  },
   "image": "https://zhao73.github.io/pashareshi/og.png",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://zhao73.github.io/pashareshi/guide/keigen-zeiritsu.html"},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zhao73.github.io/pashareshi/guide/keigen-zeiritsu.html"
+  },
   "articleSection": "消費税ガイド",
   "keywords": "軽減税率,8%,10%,レシート 見分け方,インボイス,適格簡易請求書,消費税",
-  "about": {"@type": "Thing", "name": "消費税の軽減税率制度"},
+  "about": {
+    "@type": "Thing",
+    "name": "消費税の軽減税率制度"
+  },
   "disambiguatingDescription": "本記事は制度の一般的な整理であり、個別の取引における税率の判定を保証するものではありません。詳細は国税庁の公表情報をご確認ください。"
 }
-
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "パシャレシ",
+      "item": "https://zhao73.github.io/pashareshi/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "軽減税率 8% と 10% をレシートで見分ける方法",
+      "item": "https://zhao73.github.io/pashareshi/guide/keigen-zeiritsu.html"
+    }
+  ]
+}
+</script>
 </body>
 </html>
